@@ -246,7 +246,7 @@ footer {
 }
 
 /* 64em is also 1028px when basefont is 16px */
-@media only screen and (min-width: 4rem) {
+@media only screen and (min-width: 64rem) {
   #css-zen-garden {
     width: 80%;
     margin: 0 auto;
