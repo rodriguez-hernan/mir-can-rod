@@ -8,6 +8,9 @@
 /*
  
 */
+
+
+// small devices
 .intro {
     //border: solid red 1px;
     display: flex;
@@ -42,7 +45,7 @@
     #zen-preamble {
         text-align: right;
         margin: 3% 0 3% 3%;
-        border: solid goldenrod 1px;
+        border: solid black 1px;
     }
 
  
@@ -79,4 +82,50 @@ footer {
     text-align: center;
     margin-bottom: 2%;
     border: solid goldenrod 1px;
+}
+
+//large devices
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width:4rem) {
+
+   #css-zen-garden {
+       width: 80%;
+       margin: 0 auto;
+   }
+
+   .intro {
+
+    #zen-preamble {
+        position: relative;
+        left: 55%;
+        text-align: center;
+        width: 50%;
+      
+        border: solid red 1px;
+        }
+
+   }
+
+   #zen-participation {
+       margin-left: -10%;
+       width: 120%;
+   }
+
+   #zen-benefits {
+        margin-left: -10%;
+        margin-bottom: 2%;
+        width: 300px;
+        border-radius: 80px;
+        height: 200px;
+   }
+    
+   .design-selection {
+       width: 10%;
+       position: absolute;
+       top: 35%;
+       left: 0;
+
+   }
+   
+
 }
