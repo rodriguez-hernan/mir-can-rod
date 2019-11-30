@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 @import url("https://fonts.googleapis.com/css?family=Bree+Serif|Roboto&display=swap");
 html,
 body,
@@ -84,15 +85,17 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
+
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -105,234 +108,249 @@ menu,
 nav,
 section,
 main {
-  display: block;
+    display: block;
 }
 
 body {
-  line-height: 1;
+    line-height: 1;
 }
 
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
-  content: none;
+    content: "";
+    content: none;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
-  font-family: "Bree Serif", serif;
+    font-family: "Bree Serif", serif;
 }
 
 h3 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
+
 
 /* -------------------------------- 
 xBackground 
 -------------------------------- */
+
 body {
-  /* this is the page background */
-  background-color: #f5f0e3;
+    /* this is the page background */
+    background-color: #f5f0e3;
 }
+
 
 /* -------------------------------- 
 xBasic style
 -------------------------------- */
+
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
-  box-sizing: border-box;
-  font-family: "Bree Serif", serif;
+    box-sizing: border-box;
+    font-family: "Bree Serif", serif;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 input,
 textarea,
 select {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
 }
+
 
 /*
 
 */
+
 body {
-  background-color: #40bfc1;
+    background-color: #40bfc1;
 }
 
 .intro {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .intro header {
-  width: 70%;
-  margin: 0;
-  border: solid blue 1px;
+    width: 70%;
+    margin: 0;
+    border: solid blue 1px;
 }
+
 .intro header h1 {
-  font-size: 120%;
-  margin: 2% 0 0 65%;
-  border: solid blue 1px;
-  width: 30%;
-  text-align: right;
+    font-size: 120%;
+    margin: 2% 0 0 65%;
+    border: solid blue 1px;
+    width: 30%;
+    text-align: right;
 }
+
 .intro header h2 {
-  margin-top: 20%;
-  text-align: center;
+    margin-top: 20%;
+    text-align: center;
 }
+
 .intro #zen-summary {
-  padding: 2%;
-  width: 30%;
-  margin: 0;
-  border: solid red 1px;
-  order: -1;
+    padding: 2%;
+    width: 30%;
+    margin: 0;
+    border: solid red 1px;
+    order: -1;
 }
+
 .intro #zen-preamble {
-  display: block;
-  width: 100%;
-  padding: 5px;
-  text-align: right;
-  margin: 3% 0 3% 3%;
-  border: solid black 1px;
-  background-color: #f0134d;
-  color: #f5f0e3;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    text-align: right;
+    margin: 3% 0 3% 3%;
+    border: solid black 1px;
+    background-color: #f0134d;
+    color: #f5f0e3;
 }
 
 .explanation {
-  text-align: right;
-  margin: 3% 0 3% 3%;
-  padding-right: 5px;
-  text-align: justify;
+    text-align: right;
+    margin: 3% 0 3% 3%;
+    padding-right: 5px;
+    text-align: justify;
 }
 
 .participation {
-  border: solid #3A3840 1px;
-  margin: 1rem 0;
-  padding: 0.5rem 1rem;
-  text-align: left;
-  background-color: #3A3840;
-  color: #f5f0e3;
+    border: solid #3A3840 1px;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    background-color: #3A3840;
+    color: #f5f0e3;
 }
 
 .benefits {
-  border: solid #f5f0e3 1px;
-  border-radius: 100px;
-  height: 150px;
-  width: 90%;
-  padding: 3rem;
-  text-align: center;
-  background-color: #f5f0e3;
-  margin: 0 auto;
-  transition: all 1s ease;
+    border: solid #f5f0e3 1px;
+    border-radius: 100px;
+    height: 150px;
+    width: 90%;
+    padding: 3rem;
+    text-align: center;
+    background-color: #f5f0e3;
+    margin: 0 auto;
+    transition: all 1s ease;
 }
 
 .benefits:hover {
-  transform: rotate(-7deg);
+    transform: rotate(-7deg);
 }
 
 .requirements,
 .design-archives,
 .zen-resources,
 .design-selection {
-  margin: 1rem 2%;
-  padding: 0.5rem;
+    margin: 1rem 2%;
+    padding: 0.5rem;
 }
 
 .requirements {
-  background: linear-gradient(to bottom left, transparent 49.8%, #f5f0e3 50%) top/100% 100%;
-  background-repeat: no-repeat;
-  padding: 16px;
+    background: linear-gradient(to bottom left, transparent 49.8%, #f5f0e3 50%) top/100% 100%;
+    background-repeat: no-repeat;
+    padding: 16px;
 }
 
 #zen-requirements {
-  background-color: #ff6f5e;
+    background-color: #ff6f5e;
 }
 
 .sidebar {
-  background-color: #3A3840;
-  color: #f5f0e3;
-  padding-bottom: 1rem;
+    background-color: #3A3840;
+    color: #f5f0e3;
+    padding-bottom: 1rem;
 }
+
 .sidebar ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-.sidebar ul a:link, .sidebar ul a:hover, .sidebar ul a:visited {
-  color: #f5f0e3;
+
+.sidebar ul a:link,
+.sidebar ul a:hover,
+.sidebar ul a:visited {
+    color: #f5f0e3;
 }
 
 footer {
-  text-align: center;
-  margin-bottom: 2%;
-  border: solid goldenrod 1px;
+    text-align: center;
+    margin-bottom: 2%;
+    border: solid goldenrod 1px;
 }
+
 
 /* 64em is also 1028px when basefont is 16px */
+
 @media only screen and (min-width: 700px) {
-  #css-zen-garden {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  #zen-participation {
-    margin-left: -10%;
-    width: 120%;
-  }
-
-  #zen-benefits {
-    margin-left: -10%;
-    margin-bottom: 2%;
-    width: 300px;
-    border-radius: 80px;
-    height: 200px;
-  }
-
-  .design-selection {
-    width: 10%;
-    position: absolute;
-    top: 35%;
-    left: 0;
-  }
+    #css-zen-garden {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #zen-participation {
+        margin-left: -10%;
+        width: 120%;
+    }
+    #zen-benefits {
+        margin-left: -10%;
+        margin-bottom: 2%;
+        width: 300px;
+        border-radius: 80px;
+        height: 200px;
+    }
+    .design-selection {
+        width: 10%;
+        position: absolute;
+        top: 35%;
+        left: 0;
+    }
 }
+
 
 /*# sourceMappingURL=style.css.map */

@@ -128,6 +128,29 @@ footer {
 }
 
 //large devices
+<<<<<<< HEAD
+=======
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width:64rem) {
+
+   #css-zen-garden {
+       width: 80%;
+       margin: 0 auto;
+   }
+
+   .intro {
+
+    #zen-preamble {
+        position: relative;
+        left: 55%;
+        text-align: center;
+        width: 50%;
+      
+        border: solid red 1px;
+        }
+
+   }
+>>>>>>> 42ea64c76b203b7ce81febc2f6a7d8be28904520
 
 /* 64em is also 1028px when basefont is 16px */
 
