@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Roboto&display=swap');
+h1,
+h2,
+h3,
+h4 {
+    font-family: $primary-font;
+}
+
+body {
+    font-family: $secondary-font
+}
+
+h3 {
+    font-size: 1.5rem;
+}
