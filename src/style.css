@@ -1,17 +1,361 @@
-/* Error: expected "}".
- *     ,
- * 182 | }
- *     |  ^
- *     '
- *   sass\style.scss 182:2  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a     \2577 \a 182 \2502  }\a     \2502   ^\a     \2575 \a   sass\\style.scss 182:2  root stylesheet';
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Roboto&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "Bree Serif", serif;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* -------------------------------- 
+xBackground 
+-------------------------------- */
+body {
+  /* this is the page background */
+  background-color: #f5f0e3;
+}
+
+/* -------------------------------- 
+xBasic style
+-------------------------------- */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Bree Serif", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input,
+textarea,
+select {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+}
+.intro header {
+  width: 70%;
+  margin: 0;
+  border: solid blue 1px;
+  background-color: #40bfc1;
+  height: auto;
+  padding: 1em;
+}
+.intro header h1 {
+  font-size: 3em;
+  margin: 2% 0 0 63%;
+  border: solid blue 1px;
+  text-align: right;
+}
+.intro header h2 {
+  margin-top: 12%;
+  text-align: center;
+  font-style: italic;
+}
+.intro #zen-summary {
+  padding: 2%;
+  width: 30%;
+  margin: 0;
+  border: solid red 1px;
+  color: #3A3840;
+  background-color: #f5f0e3;
+  order: -1;
+}
+
+/*
+
+*/
+body {
+  background-color: #40bfc1;
+}
+
+#zen-preamble {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  text-align: right;
+  margin-bottom: 1rem;
+  border: solid black 1px;
+  background-color: #f0134d;
+  color: #f5f0e3;
+}
+
+.explanation {
+  margin: 1rem;
+  text-align: justify;
+}
+
+.participation {
+  border: solid #3A3840 1px;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  background-color: #3A3840;
+  color: #f5f0e3;
+}
+
+.benefits {
+  border: solid #f5f0e3 1px;
+  border-radius: 50%;
+  height: 150px;
+  width: 90%;
+  padding: 3rem;
+  text-align: center;
+  background-color: #f5f0e3;
+  margin: 0 auto;
+  transition: all 1s ease;
+}
+
+.benefits:hover {
+  border-radius: 30% 70% 30% 70%;
+}
+
+.requirements,
+.design-archives,
+.zen-resources,
+.design-selection {
+  margin: 1rem 2%;
+  padding: 0.5rem;
+}
+
+.requirements {
+  background: linear-gradient(to bottom left, transparent 49.8%, #f5f0e3 50%) top/100% 100%;
+  background-repeat: no-repeat;
+  padding: 16px;
+}
+
+#zen-requirements {
+  background-color: #ff6f5e;
+}
+
+.sidebar {
+  background-color: #3A3840;
+  color: #f5f0e3;
+  padding-bottom: 1rem;
+}
+.sidebar ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.sidebar ul a:link, .sidebar ul a:hover, .sidebar ul a:visited {
+  color: #f5f0e3;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 2%;
+  border: solid goldenrod 1px;
+}
+
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+  #css-zen-garden {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .intro #zen-preamble {
+    position: relative;
+    left: 55%;
+    text-align: center;
+    width: 50%;
+    border: solid red 1px;
+  }
+}
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 700px) {
+  #css-zen-garden {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #zen-participation {
+    margin-left: -10%;
+    width: 120%;
+  }
+
+  #zen-benefits {
+    margin-left: -10%;
+    margin-bottom: 2%;
+    width: 300px;
+    border-radius: 80px;
+    height: 200px;
+  }
+
+  .design-selection {
+    width: 10%;
+    position: absolute;
+    top: 35%;
+    left: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

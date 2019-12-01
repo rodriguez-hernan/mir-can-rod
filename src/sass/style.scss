@@ -1,9 +1,11 @@
-@import 'reset';
 @import 'variables';
+@import 'reset';
 @import 'typography';
 @import 'background';
 @import 'basic-style';
 @import 'layouts';
+@import 'header';
+
 // @import 'components/...';
 
 /*
@@ -14,53 +16,22 @@
 body {
     background-color: $color-1;
 }
-
-.intro {
-    //border: solid red 1px;
-    display: flex;
-    flex-wrap: wrap;
-    header {
-        width: 70%;
-        margin: 0;
-        border: solid blue 1px;
-        background-color: $color-1;
-        h1 {
-            font-size: 120%;
-            margin: 2% 0 0 65%;
-            border: solid blue 1px;
-            width: 30%;
-            text-align: right;
-        }
-        h2 {
-            margin-top: 20%;
-            text-align: center;
-        }
-    }
-    #zen-summary {
-        padding: 2%;
-        width: 30%;
-        margin: 0;
-        border: solid red 1px;
-        color:$color-5;
-        background-color: $color-2;
-        order: -1;
-    }
     #zen-preamble {
         display: block;
         width: 100%;
         padding: 5px;
         text-align: right;
-        margin: 3% 0 3% 3%;
+        margin-bottom: 1rem;
         border: solid black 1px;
         background-color: $color-4;
         color: $color-5;
     }
-}
+
 
 .explanation {
-    text-align: right;
-    margin: 3% 0 3% 3%;
-    padding-right: 5px;
+    margin: 1rem;
+    //margin: 3% 0 3% 3%;
+    //padding-right: 5px;
     text-align: justify;
 }
 
@@ -75,7 +46,7 @@ body {
 
 .benefits {
     border: solid $color-5 1px;
-    border-radius: 100px;
+    border-radius: 50%;
     height: 150px;
     width: 90%;
     padding: 3rem;
@@ -86,7 +57,8 @@ body {
 }
 
 .benefits:hover {
-    transform: rotate(-7deg);
+    //transform: rotate(-7deg);
+    border-radius: 30% 70% 30% 70%;
 }
 
 .requirements,
@@ -131,8 +103,6 @@ footer {
 }
 
 //large devices
-<<<<<<< HEAD
-=======
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width:64rem) {
 
@@ -153,7 +123,7 @@ footer {
         }
 
    }
->>>>>>> 42ea64c76b203b7ce81febc2f6a7d8be28904520
+}
 
 /* 64em is also 1028px when basefont is 16px */
 
