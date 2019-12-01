@@ -188,6 +188,7 @@ select {
   width: 70%;
   margin: 0;
   border: solid blue 1px;
+  background-color: #40bfc1;
 }
 .intro header h1 {
   font-size: 120%;
@@ -205,6 +206,8 @@ select {
   width: 30%;
   margin: 0;
   border: solid red 1px;
+  color: #f5f0e3;
+  background-color: #3A3840;
   order: -1;
 }
 .intro #zen-preamble {

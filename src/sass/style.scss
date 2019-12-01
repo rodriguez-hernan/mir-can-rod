@@ -20,6 +20,7 @@
         width: 70%;
         margin: 0;
         border: solid blue 1px;
+        background-color: $color-1;
         h1 {
             font-size: 120%;
             margin: 2% 0 0 65%;
@@ -40,6 +41,8 @@
         width: 30%;
         margin: 0;
         border: solid red 1px;
+        color:$color-5;
+        background-color: $color-2;
         order: -1;
     }
     #zen-preamble {
