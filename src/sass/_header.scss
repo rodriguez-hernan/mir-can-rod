@@ -5,15 +5,15 @@
     header {
         width: 70%;
         margin: 0;
-        border: solid blue 1px;
+        //border: solid blue 1px;
         height: auto;
         padding: 1em;
         background-color: $color-2;
-        color:$color-5;
+        color: $color-5;
         h1 {
             font-size: 3em;
             margin: 2% 0 0 63%;
-            border: solid blue 1px;
+            //border: solid blue 1px;
             //width: 30%;
             text-align: right;
         }
@@ -27,10 +27,10 @@
         padding: 2%;
         width: 30%;
         margin: 0;
-        border: solid red 1px;
-        color: $color-2;
-        background-color:$color-5;
+        //border: solid red 1px;
         order: -1;
+        background-color: $color-5;
+        color: $color-2;
         
         
     }

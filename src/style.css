@@ -139,11 +139,11 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Bree Serif", serif;
 }
 
 body {
-  font-family: "Bree Serif", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h3 {
@@ -179,7 +179,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Bree Serif", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -193,7 +193,7 @@ img {
 input,
 textarea,
 select {
-  font-family: "Roboto", sans-serif;
+  font-family: "Bree Serif", serif;
   font-size: 1.6rem;
 }
 
@@ -204,15 +204,14 @@ select {
 .intro header {
   width: 70%;
   margin: 0;
-  border: solid blue 1px;
-  background-color: #40bfc1;
   height: auto;
   padding: 1em;
+  background-color: #3A3840;
+  color: #f5f0e3;
 }
 .intro header h1 {
   font-size: 3em;
   margin: 2% 0 0 63%;
-  border: solid blue 1px;
   text-align: right;
 }
 .intro header h2 {
@@ -224,10 +223,9 @@ select {
   padding: 2%;
   width: 30%;
   margin: 0;
-  border: solid red 1px;
-  color: #3A3840;
-  background-color: #f5f0e3;
   order: -1;
+  background-color: #f5f0e3;
+  color: #3A3840;
 }
 
 /*
@@ -243,7 +241,6 @@ body {
   padding: 5px;
   text-align: right;
   margin-bottom: 1rem;
-  border: solid black 1px;
   background-color: #f0134d;
   color: #f5f0e3;
 }
