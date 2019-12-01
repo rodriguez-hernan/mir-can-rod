@@ -7,20 +7,21 @@
         margin: 0;
         //border: solid blue 1px;
         height: auto;
-        padding: 1em;
+        padding: 1em 1em 0 1em;
         background-color: $color-2;
         color: $color-5;
         h1 {
             font-size: 3em;
-            margin: 2% 0 0 63%;
-            //border: solid blue 1px;
-            //width: 30%;
+            margin: 2% 0 0 60%;
+            border: solid blue 1px;
+            width: 40%;
             text-align: right;
         }
         h2 {
             margin-top: 12%;
             text-align: center;
             font-style: italic;
+            padding-bottom: 5px;
         }
     }
     #zen-summary {
