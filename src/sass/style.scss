@@ -5,34 +5,37 @@
 @import 'basic-style';
 @import 'layouts';
 @import 'header';
-
 // @import 'components/...';
 
 /*
- 
+
 */
 
 // small devices
 body {
     background-color: $color-1;
 }
-    #zen-preamble {
-        display: block;
-        width: 100%;
-        padding: 5px;
-        text-align: right;
-        margin-bottom: 1rem;
-        //border: solid black 1px;
-        background-color: $color-4;
-        color: $color-5;
-    }
 
+#zen-preamble {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: right;
+    margin: 1rem 0;
+    //border: solid black 1px;
+    background-color: $color-4;
+    color: $color-5;
+}
 
 .explanation {
     margin: 1rem;
     //margin: 3% 0 3% 3%;
     //padding-right: 5px;
     text-align: justify;
+    .whatisabout {
+        margin: 1rem 0;
+        padding: 1.5rem;
+    }
 }
 
 .participation {
@@ -103,31 +106,49 @@ footer {
 }
 
 //large devices
+
 /* 64em is also 1028px when basefont is 16px */
+
 @media only screen and (min-width:64rem) {
-
-   #css-zen-garden {
-       width: 80%;
-       margin: 0 auto;
-   }
-
-   .intro {
-
-    #zen-preamble {
-        position: relative;
-        left: 55%;
-        text-align: center;
-        width: 50%;
-      
-        border: solid red 1px;
+    #css-zen-garden {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .intro {
+        #zen-preamble {
+            position: relative;
+            left: 55%;
+            text-align: center;
+            width: 50%;
+            border: solid red 1px;
         }
-
-   }
+    }
 }
+
 
 /* 64em is also 1028px when basefont is 16px */
 
 @media only screen and (min-width:700px) {
+    p {
+        font-size: 1.2rem;
+    }
+    h3 {
+        padding: 1rem 0;
+    }
+    #zen-explanation {
+        display: flex;
+        flex-direction: column;
+        #zen-preamble {
+            width: 70%;
+            align-self: flex-end;
+            position: relative;
+            left: 50px;
+        }
+        .whatisabout {
+            width: 80%;
+            align-self: center;
+        }
+    }
     #css-zen-garden {
         width: 80%;
         margin: 0 auto;
@@ -137,16 +158,57 @@ footer {
         width: 120%;
     }
     #zen-benefits {
-        margin-left: -10%;
         margin-bottom: 2%;
         width: 300px;
-        border-radius: 80px;
+        border-radius: 100px;
         height: 200px;
+        animation: move-sides 20s infinite;
     }
-    .design-selection {
-        width: 10%;
-        position: absolute;
-        top: 35%;
-        left: 0;
+    .requirements {
+        width: 80%;
+        margin: 1.5rem auto;
+    }
+    .sidebar {
+        .design-selection {
+            width: 15%;
+            position: absolute;
+            top: 30%;
+            left: 0;
+            padding: 15px;
+            background-color: darken($color-1, 10%);
+            h3 {
+                padding: 10px 0;
+            }
+        }
+        ul {
+            grid-template-columns: 1fr;
+            li {
+                margin-top: 4px;
+            }
+        }
+        .design-archives,
+        .zen-resources {
+            width: 40%;
+            display: inline-block;
+            margin: 1rem auto;
+            text-align: end;
+        }
+    }
+    @keyframes move-sides {
+        0% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(-200px);
+        }
+        50% {
+            transform: translateX(0);
+        }
+        75% {
+            transform: translateX(200px);
+        }
+        100% {
+            transform: translateX(0);
+        }
     }
 }

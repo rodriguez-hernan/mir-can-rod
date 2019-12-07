@@ -242,9 +242,9 @@ body {
 #zen-preamble {
   display: block;
   width: 100%;
-  padding: 5px;
+  padding: 1.5rem;
   text-align: right;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   background-color: #f0134d;
   color: #f5f0e3;
 }
@@ -252,6 +252,10 @@ body {
 .explanation {
   margin: 1rem;
   text-align: justify;
+}
+.explanation .whatisabout {
+  margin: 1rem 0;
+  padding: 1.5rem;
 }
 
 .participation {
@@ -333,6 +337,29 @@ footer {
 }
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 700px) {
+  p {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    padding: 1rem 0;
+  }
+
+  #zen-explanation {
+    display: flex;
+    flex-direction: column;
+  }
+  #zen-explanation #zen-preamble {
+    width: 70%;
+    align-self: flex-end;
+    position: relative;
+    left: 50px;
+  }
+  #zen-explanation .whatisabout {
+    width: 80%;
+    align-self: center;
+  }
+
   #css-zen-garden {
     width: 80%;
     margin: 0 auto;
@@ -344,18 +371,59 @@ footer {
   }
 
   #zen-benefits {
-    margin-left: -10%;
     margin-bottom: 2%;
     width: 300px;
-    border-radius: 80px;
+    border-radius: 100px;
     height: 200px;
+    animation: move-sides 20s infinite;
   }
 
-  .design-selection {
-    width: 10%;
+  .requirements {
+    width: 80%;
+    margin: 1.5rem auto;
+  }
+
+  .sidebar .design-selection {
+    width: 15%;
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 0;
+    padding: 15px;
+    background-color: #329a9c;
+  }
+  .sidebar .design-selection h3 {
+    padding: 10px 0;
+  }
+  .sidebar ul {
+    grid-template-columns: 1fr;
+  }
+  .sidebar ul li {
+    margin-top: 4px;
+  }
+  .sidebar .design-archives,
+.sidebar .zen-resources {
+    width: 40%;
+    display: inline-block;
+    margin: 1rem auto;
+    text-align: end;
+  }
+
+  @keyframes move-sides {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-200px);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(200px);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 }
 
