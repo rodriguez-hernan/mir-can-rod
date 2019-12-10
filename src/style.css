@@ -348,6 +348,7 @@ footer {
   }
   .intro #zen-summary {
     width: 35%;
+    text-align: center;
   }
 
   p {
@@ -438,6 +439,7 @@ footer {
     text-align: end;
   }
 
+  /*----------Animacion-----------*/
   @keyframes move-sides {
     0% {
       transform: translateX(0);

@@ -140,6 +140,7 @@ footer {
          }
          & #zen-summary {
             width: 35%;
+            text-align: center;
          }
      }
         
@@ -220,6 +221,7 @@ footer {
                 
             }
         }
+
         .design-archives,
         .zen-resources {
             width: 40%;
@@ -228,6 +230,8 @@ footer {
             text-align: end;
         }
     }
+
+    /*----------Animacion-----------*/
     @keyframes move-sides {
         0% {
             transform: translateX(0);
