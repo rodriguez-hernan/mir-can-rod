@@ -415,16 +415,20 @@ footer {
     top: 23%;
     left: 5.5%;
     padding: 15px;
-    background-color: #329a9c;
+    background-color: #ff412b;
   }
   .sidebar .design-selection h3 {
     padding: 10px 0;
+    font-size: 2.3rem;
   }
   .sidebar ul {
     grid-template-columns: 1fr;
   }
   .sidebar ul li {
     margin-top: 4px;
+  }
+  .sidebar ul li a {
+    font-size: 1.5rem;
   }
   .sidebar .design-archives,
 .sidebar .zen-resources {

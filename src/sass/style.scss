@@ -204,15 +204,20 @@ footer {
             top: 23%;
             left: 5.5%;
             padding: 15px;
-            background-color: darken($color-1, 10%);
+            background-color: darken($color-3, 10%);
             h3 {
                 padding: 10px 0;
+                font-size: 2.3rem;
             }
         }
         ul {
             grid-template-columns: 1fr;
             li {
                 margin-top: 4px;
+                a{
+                    font-size: 1.5rem;
+                }
+                
             }
         }
         .design-archives,
