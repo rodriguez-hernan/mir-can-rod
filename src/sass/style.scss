@@ -129,8 +129,22 @@ footer {
 /* 64em is also 1028px when basefont is 16px */
 
 @media only screen and (min-width:700px) {
+    html {
+        font-size: 62.5%;
+        background-color: white;
+    }
+    .intro {
+        & header {
+            width: 65%;
+            font-size: 1.5rem;
+         }
+         & #zen-summary {
+            width: 35%;
+         }
+     }
+        
     p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     h3 {
         padding: 1rem 0;
@@ -142,11 +156,18 @@ footer {
             width: 70%;
             align-self: flex-end;
             position: relative;
-            left: 50px;
+            left: 40px;
         }
         .whatisabout {
-            width: 80%;
+            width: 60%;
             align-self: center;
+            //margin: 5rem 0;
+            h3{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 2rem;
+            }
         }
     }
     #css-zen-garden {
@@ -154,26 +175,34 @@ footer {
         margin: 0 auto;
     }
     #zen-participation {
-        margin-left: -10%;
-        width: 120%;
+        margin-left: -3%;
+        width: 106%;
+        padding: 2rem 1rem;
     }
     #zen-benefits {
         margin-bottom: 2%;
-        width: 300px;
+        width: 400px;
         border-radius: 100px;
-        height: 200px;
+        height: 210px;
         animation: move-sides 20s infinite;
+        
     }
     .requirements {
-        width: 80%;
+        width: 60%;
         margin: 1.5rem auto;
+        h3{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 2rem;
+        }
     }
     .sidebar {
         .design-selection {
             width: 15%;
             position: absolute;
-            top: 30%;
-            left: 0;
+            top: 23%;
+            left: 5.5%;
             padding: 15px;
             background-color: darken($color-1, 10%);
             h3 {
