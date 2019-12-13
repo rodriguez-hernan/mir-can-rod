@@ -209,6 +209,9 @@ select {
   padding: 1em 1em 0 1em;
   background-color: #3A3840;
   color: #f5f0e3;
+  animation: stars 0.5s steps(3) infinite alternate;
+  background: url(http://www.bryanjones.us/sites/default/files/stars.png);
+  background-color: #3A3840;
 }
 .intro header h1 {
   font-size: 3em;
@@ -265,6 +268,9 @@ body {
   text-align: left;
   background-color: #3A3840;
   color: #f5f0e3;
+  animation: stars 0.5s steps(3) infinite alternate;
+  background: url(http://www.bryanjones.us/sites/default/files/stars.png);
+  background-color: #3A3840;
 }
 
 .benefits {
@@ -277,6 +283,8 @@ body {
   background-color: #f5f0e3;
   margin: 0 auto;
   transition: all 1s ease;
+  background: linear-gradient(to top right, #000000, #020101, #140501, #24070B, #37060E, #460011, #560817, #8B0019, #93001A, #A40017, #A90019, #B00019, #CC001B, #DC0019, #EC0019, #FF0023, #FF0033, #FF0040, #FF9CAE, #FFCCCF, #FDDDDF, #FF0032, #EEE0E4);
+  box-shadow: inset -20px -5px 60px -15px #EEE;
 }
 
 .benefits:hover {
@@ -302,9 +310,11 @@ body {
 }
 
 .sidebar {
-  background-color: #3A3840;
   color: #f5f0e3;
   padding-bottom: 1rem;
+  animation: stars 0.5s steps(3) infinite alternate;
+  background: url(http://www.bryanjones.us/sites/default/files/stars.png);
+  background-color: #3A3840;
 }
 .sidebar ul {
   display: grid;
@@ -318,6 +328,21 @@ footer {
   text-align: center;
   margin-bottom: 2%;
   border: solid goldenrod 1px;
+  font-size: 200%;
+}
+
+footer a {
+  background-color: #f0134d;
+  padding: 5px;
+  border-radius: 20px;
+  color: white;
+}
+
+footer a:hover {
+  background-color: white;
+  padding: 5px;
+  border-radius: 20px;
+  color: #f0134d;
 }
 
 /* 64em is also 1028px when basefont is 16px */
@@ -345,6 +370,9 @@ footer {
   .intro header {
     width: 65%;
     font-size: 1.5rem;
+    animation: stars 0.5s steps(3) infinite alternate;
+    background: url(http://www.bryanjones.us/sites/default/files/stars.png);
+    background-color: #3A3840;
   }
   .intro #zen-summary {
     width: 35%;
@@ -397,6 +425,8 @@ footer {
     border-radius: 100px;
     height: 210px;
     animation: move-sides 20s infinite;
+    background: linear-gradient(to top right, #000000, #020101, #140501, #24070B, #37060E, #460011, #560817, #8B0019, #93001A, #A40017, #A90019, #B00019, #CC001B, #DC0019, #EC0019, #FF0023, #FF0033, #FF0040, #FF9CAE, #FFCCCF, #FDDDDF, #FF0032, #EEE0E4);
+    box-shadow: inset -20px -5px 60px -15px #EEE;
   }
 
   .requirements {
