@@ -216,7 +216,6 @@ select {
 .intro header h1 {
   font-size: 3em;
   margin: 2% 0 0 60%;
-  border: solid blue 1px;
   width: 40%;
   text-align: right;
 }
@@ -271,6 +270,15 @@ body {
   animation: stars 0.5s steps(3) infinite alternate;
   background: url(http://www.bryanjones.us/sites/default/files/stars.png);
   background-color: #3A3840;
+}
+.participation a {
+  color: #f0134d;
+  font-size: 120%;
+}
+
+#zen-summary a {
+  color: #f0134d;
+  font-size: 120%;
 }
 
 .benefits {

@@ -49,6 +49,16 @@ body {
     animation: stars 0.5s steps(3) infinite alternate;
     background: url(http://www.bryanjones.us/sites/default/files/stars.png);
     background-color:  $color-2;
+
+    & a {
+        color: $color-4;
+        font-size: 120%;
+    }
+}
+
+#zen-summary a {
+    color: $color-4;
+    font-size: 120%;
 }
 
 .benefits {
