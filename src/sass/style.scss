@@ -5,12 +5,6 @@
 @import 'basic-style';
 @import 'layouts';
 @import 'header';
-// @import 'components/...';
-
-/*
-
-*/
-
 // small devices
 body {
     background-color: $color-1;
@@ -22,22 +16,18 @@ body {
     padding: 1.5rem;
     text-align: right;
     margin: 1rem 0;
-    //border: solid black 1px;
     background-color: $color-4;
     color: $color-5;
 }
 
 .explanation {
     margin: 1rem;
-    //margin: 3% 0 3% 3%;
-    //padding-right: 5px;
     text-align: justify;
     .whatisabout {
         margin: 1rem 0;
         padding: 1.5rem;
     }
 }
-
 
 .participation {
     border: solid $color-2 1px;
@@ -48,8 +38,7 @@ body {
     color: $color-5;
     animation: stars 0.5s steps(3) infinite alternate;
     background: url(http://www.bryanjones.us/sites/default/files/stars.png);
-    background-color:  $color-2;
-
+    background-color: $color-2;
     & a {
         color: $color-4;
         font-size: 120%;
@@ -71,12 +60,11 @@ body {
     background-color: $color-5;
     margin: 0 auto;
     transition: all 1s ease;
-    background: linear-gradient(to top right, #000000, #020101, #140501, #24070B, #37060E, #460011, #560817, #8B0019, #93001A, #A40017, #A90019, #B00019, #CC001B, #DC0019, #EC0019, #FF0023, #FF0033, #FF0040,  #FF9CAE, #FFCCCF, #FDDDDF, #FF0032, #EEE0E4);
+    background: linear-gradient(to top right, #000000, #020101, #140501, #24070B, #37060E, #460011, #560817, #8B0019, #93001A, #A40017, #A90019, #B00019, #CC001B, #DC0019, #EC0019, #FF0023, #FF0033, #FF0040, #FF9CAE, #FFCCCF, #FDDDDF, #FF0032, #EEE0E4);
     box-shadow: inset -20px -5px 60px -15px #EEE;
 }
 
 .benefits:hover {
-    //transform: rotate(-7deg);
     border-radius: 30% 70% 30% 70%;
 }
 
@@ -99,12 +87,11 @@ body {
 }
 
 .sidebar {
-    
     color: $color-5;
     padding-bottom: 1rem;
     animation: stars 0.5s steps(3) infinite alternate;
     background: url(http://www.bryanjones.us/sites/default/files/stars.png);
-    background-color:  $color-2;
+    background-color: $color-2;
     ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -132,7 +119,7 @@ footer a {
     color: white;
 }
 
-footer a:hover{
+footer a:hover {
     background-color: white;
     padding: 5px;
     border-radius: 20px;
@@ -140,9 +127,6 @@ footer a:hover{
 }
 
 //large devices
-
-/* 64em is also 1028px when basefont is 16px */
-
 @media only screen and (min-width:64rem) {
     #css-zen-garden {
         width: 80%;
@@ -174,14 +158,12 @@ footer a:hover{
             animation: stars 0.5s steps(3) infinite alternate;
             background: url(http://www.bryanjones.us/sites/default/files/stars.png);
             background-color: #3A3840;
-    
-         }
-         & #zen-summary {
+        }
+        & #zen-summary {
             width: 35%;
             text-align: center;
-         }
-     }
-        
+        }
+    }
     p {
         font-size: 1.5rem;
     }
@@ -201,10 +183,10 @@ footer a:hover{
             width: 60%;
             align-self: center;
             //margin: 5rem 0;
-            h3{
+            h3 {
                 font-size: 3rem;
             }
-            p{
+            p {
                 font-size: 2rem;
             }
         }
@@ -224,17 +206,16 @@ footer a:hover{
         border-radius: 100px;
         height: 210px;
         animation: move-sides 20s infinite;
-        background: linear-gradient(to top right, #000000, #020101, #140501, #24070B, #37060E, #460011, #560817, #8B0019, #93001A, #A40017, #A90019, #B00019, #CC001B, #DC0019, #EC0019, #FF0023, #FF0033, #FF0040,  #FF9CAE, #FFCCCF, #FDDDDF, #FF0032, #EEE0E4);
+        background: linear-gradient(to top right, #000000, #020101, #140501, #24070B, #37060E, #460011, #560817, #8B0019, #93001A, #A40017, #A90019, #B00019, #CC001B, #DC0019, #EC0019, #FF0023, #FF0033, #FF0040, #FF9CAE, #FFCCCF, #FDDDDF, #FF0032, #EEE0E4);
         box-shadow: inset -20px -5px 60px -15px #EEE;
-        
     }
     .requirements {
         width: 60%;
         margin: 1.5rem auto;
-        h3{
+        h3 {
             font-size: 3rem;
         }
-        p{
+        p {
             font-size: 2rem;
         }
     }
@@ -255,13 +236,11 @@ footer a:hover{
             grid-template-columns: 1fr;
             li {
                 margin-top: 4px;
-                a{
+                a {
                     font-size: 1.5rem;
                 }
-                
             }
         }
-
         .design-archives,
         .zen-resources {
             width: 40%;
@@ -270,8 +249,7 @@ footer a:hover{
             text-align: end;
         }
     }
-
-    /*----------Animacion-----------*/
+    /*----------Animation-----------*/
     @keyframes move-sides {
         0% {
             transform: translateX(0);
